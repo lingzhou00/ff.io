@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" href="//at.alicdn.com/t/font_626784_0j006ef09vff.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<style type="text/css">
+*{margin:0px; padding:0px;}
+body{text-align:left; color:green;padding-left:20px;padding-top:20px;}
+a{text-decoration:none; font-size:20px; color:#4C8DAE;}
+#result{border-top:1px solid #ccc;padding:5px;  color:#666;}
+</style>
+<title>加载中.....</title>
+<title> </title>
+</head>
+<body>
+<a href="https://www.996315.com/api/scan/"><i class='dzwfont dzw-saomiao' style="font-size:500px;color:white;"></i>      </a><br><br><br>
+<a href="https://sugarmrlee.github.io/empty/"><i class='dzwfont dzw-saomiao' style="font-size:500px;color:white;"></i>      </a><br><br><br>
+<br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="result"></div>
+</body>
+<script type="text/javascript">
+$("#current_url").html(window.location.href);
+var qr=GetQueryString("qrresult");
+if(qr.length>0){
+    window.open('https://sugarmrlee.github.io/empty/')
+	$("#result").html(qr);
+	;
+}
+function GetQueryString(name){
+    var reg = new RegExp("\\b"+ name +"=([^&]*)");
+    var r = decodeURIComponent(location.href).match(reg);
+    if (r!=null) return r[1];
+}
+</script>
+</html>
